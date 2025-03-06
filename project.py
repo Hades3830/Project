@@ -14,7 +14,7 @@ def view_expenses():
     try:
         with open(EXPENSE_FILE, "r") as file:
             reader = csv.reader(file)
-            return list(reader) st
+            return list(reader)
     except FileNotFoundError:
         return [] 
 
